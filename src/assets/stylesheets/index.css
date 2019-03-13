@@ -1,0 +1,383 @@
+/*!
+ * @since:2019/03/06.
+ * @author:flyfly ~~~!
+ * @Email:li13572463831@163.com ~~~!
+ * @Copyright © 2019. All Rights Reserved.
+ * @rule:采用大驼峰法命名.
+ **/
+ /*首页样式*/
+/*首页头部*/
+.header {
+	width: 100%;
+	height: 44px;
+	background: #fff;
+	text-align: center;
+	font-size: 0px;
+	line-height: 0px;
+	position: fixed !important;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	padding: 0 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.header:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: #92999d;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	display: none;
+}
+
+.kh-44 {
+	height: 44px;
+}
+
+.header .fr {
+	position: relative;
+	z-index: 5;
+}
+.header-bule{
+    background: #20a0ff;
+}
+.header .mui-title {
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+}
+.header .h-msg {
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 24px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	color: #fff;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+.header .h-msg .num {
+	background: #f04f45;
+	position: absolute;
+	left: 21px;
+	top: 6px;
+	min-width: 16px;
+	height: 16px;
+	padding: 0 4px;
+	text-align: center;
+	line-height: 16px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+.header-red .h-msg {
+	color: #fff;
+}
+.header .h-srh {
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 24px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	color: #fff;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+/*切换图片*/
+#banner {
+	width: 100%;
+	height:auto;
+}
+#banner .swiper-slide {
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+#banner .swiper-slide img{width:100%;}
+#banner .swiper-button-white{opacity:0.5;}
+#banner .swiper-button-prev,.swiper-button-next{
+-webkit-background-size: 18px 30px;
+		background-size: 18px 30px;
+}
+#banner .swiper-pagination-bullets {
+bottom: 5px;
+}
+
+#banner .swiper-pagination-bullet {
+width: 10px;
+height: 3px;
+background: #fff;
+opacity: .75;
+border-radius: 0;
+transform: skewX(45deg);
+}
+
+#banner .swiper-pagination-bullet-active {
+width: 15px;
+background: #48b3e2;
+opacity: .75;}
+/*滚动新闻*/
+.M10Sider{margin:0 10px;}
+.TextScrollBox {
+	height: 44px;
+	background: #fff;
+	padding: 0 .3rem;
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+
+.TextScrollBox .icon-mycm-gonggao {
+	width: .36rem;
+	height: 44px;
+	line-height: 44px;
+	font-size: .36rem;
+	color: #20a0ff;
+	display: block;
+	flex-shrink: 0;
+	margin-right: .18rem;
+}
+
+.TextScroll {
+	width: 100%;
+	height: 30px;
+	margin: 7px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.TextScroll ul {
+	width: 100%;
+	position: absolute;
+	height: 30px;
+}
+
+.TextScroll ul li {
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	padding-right: 40px;
+	position: relative;
+	font-size: .28rem;
+}
+
+.TextScroll ul li .ItemKey {
+	display: block;
+	height: 30px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.TextScroll .date {
+	width: 40px;
+	text-align: right;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #999;
+	display: block;
+}
+/*滚动产品*/
+.plist.idxNew {
+	height: 5.8rem !important;
+	padding: .3rem 0 0 .3rem;
+	overflow: hidden;
+	font-size: 0;
+	margin-top: -.3rem;
+	font-size: 0;
+	display: block;
+}
+
+.idxNew .Pro-scroll {
+	height: 4.8rem !important;
+}
+
+.plist.idxNew .item {
+	width: 100%;
+	margin:0 .3rem 0 0 !important;
+	padding: 0 !important;
+	display: inline-block;
+	margin:10px;
+
+}
+
+.idxNew .item .tap {
+	width: 100%;
+	padding: .24rem;
+	height: 4.8rem;
+	background: #fff;
+	box-shadow: 0px 1px 10px 0px rgba( 0, 0, 0, .1);
+	border-radius: .1rem;
+	
+}
+.plist.idxNew .content{
+	padding: .2rem 0;
+}
+.plist.idxNew .name{
+	font-size: .24rem;
+}
+
+
+/*热门资讯*/
+.newsList .item {
+	padding: .3rem;
+	position: relative;
+	background: #fff;
+}
+
+.newsList .item:after {
+	content: '';
+	position: absolute;
+	left: .3rem;
+	right: .3rem;
+	bottom: 0;
+	height: 1px;
+	background: #e5e8ea;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+}
+
+.newsList .item:last-child:after {
+	display: none;
+}
+
+.newsList .thumb {
+	display: flex;
+	display: -webkit-flex;
+	margin-top: .18rem;
+}
+
+.newsList .thumb .imgbox {
+	width: 100%;
+}
+
+.newsList .thumb .imgbox:nth-child(2) {
+	margin: 0 1px;
+}
+
+.newsList .thumb .imgbox:last-child {
+	margin-right: 0;
+}
+
+.newsList .name {
+	line-height: .42rem;
+	font-size: .3rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	overflow: hidden;
+	white-space: normal!important;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.newsList .info {
+	height: .36rem;
+	line-height: .36rem;
+	font-size: .24rem;
+	color: #92999d;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-top: .18rem;
+}
+/*产品列表*/
+
+.plist {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.plist .item {
+	width: 50%;
+	padding: .08rem .04rem 0 0;
+}
+
+.plist .item:nth-child(2n) {
+	padding: .08rem 0 0 .04rem;
+}
+
+.plist .thumb {
+	width: 100%;
+}
+
+.plist .tap {
+	background: #fff;
+}
+
+.plist .content {
+	padding: .2rem;
+}
+
+.plist .name {
+	height: .36rem;
+	line-height: .36rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: .28rem;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.plist .price {
+	height: .36rem;
+	font-size: .24rem;
+	line-height: .36rem;
+	margin-top: .4rem;
+}
+
+.plist .price .nPrice {
+	font-size: .32rem;
+	font-weight: bold;
+}
+
+.plist .price .oPrice {
+	text-decoration: line-through;
+	margin-left: .2rem;
+	color: #92999D;
+}
+
+.plist .volume {
+	height: .36rem;
+	line-height: .36rem;
+	margin-top: .1rem;
+	color: #92999D;
+}
+

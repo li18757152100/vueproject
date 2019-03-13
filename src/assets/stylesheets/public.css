@@ -1,0 +1,226 @@
+/*!
+ * @since:2019/03/06.
+ * @author:flyfly ~~~!
+ * @Email:li13572463831@163.com ~~~!
+ * @Copyright © 2019. All Rights Reserved.
+ * @rule:采用大驼峰法命名.
+ **/
+ /*头部*/
+.header {
+	width: 100%;
+	height: 44px;
+	background: #fff;
+	text-align: center;
+	font-size: 0px;
+	line-height: 0px;
+	position: fixed !important;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	padding: 0 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.header:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: #92999d;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	display: none;
+}
+.header .mui-title {
+    height: 44px;
+    line-height: 44px;
+    color: #000;
+    font-weight: normal;
+    font-size: 18px;
+}
+.mui-bar .mui-title {
+    right: 40px;
+    left: 40px;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    text-overflow: ellipsis;
+}
+.LeftArrow {
+    margin: 0;
+    margin-left: -5px;
+    color: #15181a;
+    font-size: 24px;
+	padding: 10px;
+	position: absolute;
+	left:0px;
+}
+.header-blue{
+	background:#20a0ff;
+	
+}
+.header-blue .mui-title{
+	color:#fff!important;
+}
+.header-blue .LeftArrow{
+	color:#fff!important;
+	top:0px;
+}
+.header .carts {
+	width: 44px;
+	height: 44px;
+	font-size: 22px;
+	line-height: 44px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	color: #62666d;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+
+.carnum {
+	width: 18px;
+	height: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	color: #fff;
+	background: #20a0ff;
+	display: block;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	-webkit-border-radius: 18px;
+	border-radius: 18px;
+}
+
+.header-transparent {
+	background: rgba(255, 39, 65, 0);
+}
+
+.header-transparent .mui-icon {
+	color: #fff !important;
+}
+
+.header .h-menu {
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 22px;
+	color: #55585f;
+	flex-shrink: 0;
+	position: relative;
+}
+
+.header .h-menu span {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5px;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.header-transparent .h-menu,
+.header-red .h-menu {
+	color: #fff;
+}
+/*底部*/
+.kh-49 {
+	width: 100%;
+	height: 49px;
+}
+
+.footer {
+	width: 100%;
+	height: 49px;
+	background: #f8f8f8;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 90;
+	-webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, .1);
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, .1);
+}
+
+.mui-off-canvas-wrap .footer {
+	position: absolute!important;
+}
+
+.footer .tab {
+	width: 25%;
+	height: 49px;
+	display: block;
+	text-align: center;
+	float: left;
+	color: #8d999d;
+	position: relative;
+}
+
+.footer .tab i {
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin: 2px auto 0;
+	background: url(../../assets/images/icon/footer-icon.png) no-repeat;
+	-webkit-background-size: 120px 60px;
+	background-size: 120px 60px;
+}
+
+.footer .tab .icon-1 {
+	background-position: 0 0;
+}
+
+.footer .tab .icon-2 {
+	background-position: -30px 0;
+}
+
+.footer .tab .icon-3 {
+	background-position: -60px 0;
+}
+
+.footer .tab .icon-4 {
+	background-position: -90px 0;
+}
+
+.footer .tab.active .icon-1,
+.footer .tab:hover .icon-1 {
+	background-position: 0 -30px;
+}
+
+.footer .tab.active .icon-2,
+.footer .tab:hover .icon-2 {
+	background-position: -30px -30px;
+}
+
+.footer .tab.active .icon-3,
+.footer .tab:hover .icon-3 {
+	background-position: -60px -30px;
+}
+
+.footer .tab.active .icon-4,
+.footer .tab:hover .icon-4 {
+	background-position: -90px -30px;
+}
+
+.footer .active,
+.footer .tab:hover,
+.footer .active i {
+	color: #20a0ff;
+}
+
+.footer .tab p {
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+}

@@ -1,0 +1,308 @@
+/*!
+ * @since:2019/03/06.
+ * @author:flyfly ~~~!
+ * @Email:li13572463831@163.com ~~~!
+ * @Copyright © 2019. All Rights Reserved.
+ * @rule:采用大驼峰法命名.
+ **/
+/* login & registered start */
+html,
+			body {
+				height: 100%;
+				overflow: hidden;
+				
+			}
+			
+			.header {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			
+			.login {
+				position: relative;
+				height: 100%;
+				background: #fff;
+				padding-top: 44px;
+            }
+.login-logo {
+	width: 2.4rem;
+	margin: .6rem auto 0;
+}
+
+.login-logo img {
+	width: 100%;
+}
+
+.login-form {
+	margin: .4rem .64rem 0;
+}
+.login-form .tits{
+	font-size: 20px;
+}
+.login-form .item {
+	position: relative;
+	margin-top: .3rem;
+}
+
+.login-form .input-box {
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+
+.login-form .input-box:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: #e5e8ef;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+}
+
+.l-txt {
+	width: 100%;
+	height: .9rem;
+	line-height: .9rem;
+	display: block;
+	font-size: .28rem;
+	color: #25282f;
+}
+
+.l-txt::-webkit-input-placeholder {
+	color: #c5c8cf;
+}
+
+
+.l-btn {
+	width: 100%;
+	height: .9rem;
+	line-height: .9rem;
+	padding: 0;
+	border: none;
+	font-size: .32rem;
+	display: block;
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .opn {
+	margin-top: .6rem;
+}
+
+.login-form .text {
+	margin-top: .24rem;
+	height: .72rem;
+	line-height: .72rem;
+	font-size: .24rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+
+
+.login-form .getyzm {
+	height: .48rem;
+	line-height: .44rem;
+	color: #F01414;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -.32rem;
+	font-size: .24rem;
+	padding: 0 .24rem;
+	border: #F01414 1px solid;
+	border-radius: .48rem;
+}
+
+.login-form .getyzm.fail {
+	border: #CCC 1px solid;
+	color: #CCC;
+}
+
+.img-yzm {
+	width: 108px;
+	height: 44px;
+	padding: 5px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-left: #efefef 1px solid;
+	border-right: #efefef 1px solid;
+}
+
+.img-yzm img {
+	width: 98px;
+	height: 34px;
+}
+
+.login-form .icon-tmy-clear {
+	width: 40px;
+	height: 36px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 36px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -18px;
+	opacity: 0.25;
+	display: none;
+	color: #000;
+}
+
+.login-form .icon-tmy-clear.active {
+	display: block;
+}
+
+.login-form .yzm .icon-tmy-clear {
+	right: 90px;
+}
+
+.protocol {
+	position: absolute;
+	left: .3rem;
+	right: .3rem;
+	bottom: .3rem;
+	font-size: .24rem;
+	line-height: .36rem;
+	text-align: center;
+	color: #92999d;
+}
+
+.protocol .chk {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -9px;
+}
+
+.reg-tab {
+	height: 44px;
+	margin: 20px 10% -30px;
+	position: relative;
+}
+
+.reg-tab:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: #FFF;
+	opacity: 0.15;
+}
+
+.reg-tab li {
+	width: 50%;
+	float: left;
+	text-align: center;
+	font-size: 0;
+}
+
+.reg-tab li a {
+	height: 44px;
+	line-height: 44px;
+	color: #FFF;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.reg-tab .active a {
+	border-bottom: #ff0 2px solid;
+	color: #ff0;
+}
+
+.login-or {
+	text-align: center;
+	color: #999;
+	margin: .48rem .72rem 0;
+}
+
+.login-or .title {
+	padding: .32rem 0;
+	text-align: center;
+	font-size: 0;
+	position: relative;
+}
+
+.login-or .title .name {
+	height: .48rem;
+	line-height: .48rem;
+	font-size: .24rem;
+	background: #fff;
+	padding: 0 .48rem;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+.login-or .title:after {
+	content: '';
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	height: 1px;
+	background: #e5e8ea;
+	transform: scaleY(.5);
+}
+
+.login-or .link {
+	font-size: 0;
+	text-align: center;
+	margin-top: .32rem;
+}
+
+.login-or .link a {
+	margin: 0 .36rem;
+	display: inline-block;
+	width: .64rem;
+	height: .64rem;
+}
+
+.login-or .link a img {
+	width: 100%;
+	border-radius: 1.28rem;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, .1);
+}
+
+.login-form .name {
+	height: 44px;
+	line-height: 44px;
+	font-size: 15px;
+	color: #13334d;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -22px;
+}
+
+.forgot-tips {
+	margin: .96rem auto -.32rem;
+}
+
+.forgot-tips img {
+	height: 1.92rem;
+	margin: 0 auto;
+}
+
+.forgot-tips p {
+	font-size: .37333333333333335rem;
+	color: #666;
+	text-align: center;
+	margin-top: .48rem
+}
+.LoginBox,.ForgotBox,.ResetBox{
+	position:absolute;
+	background: #fff;
+	height:100%;
+	width:100%;
+}
+/* login & registered end */
